@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html class="no-js" lang="" ng-app="store">
+    <head>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="application.css">
+
+        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-i18n/angular-locale_de-de.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="products.js"></script>
+
+    </head>
+    <body ng-controller="StoreController as store">
+        <!-- Calling the controller we have created on app.js and creating a scope -->
+      <div class="container">
+        <ul class="list-group">
+          <li ng-repeat="product in store.products" 
+               ng-hide="store.product.soldOut" 
+               class="list-group-item">
+            <product-title></product-title>
+            <product-panels></product-panels>
+            <button ng-show="product.canPurchase" class="btn btn-primary"> Add to Cart</button>
+          </li>
+        </ul>
+      </div>
+    </body>
+</html>

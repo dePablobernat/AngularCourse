@@ -1,0 +1,27 @@
+{
+  "name": "angularjs_course",
+  "description": "angularjs_course",
+  "main": "app.js",
+  "authors": [
+    "Bernat de Pablo"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angular",
+    "js",
+    "course"
+  ],
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "angular-i18n": "^1.5.9"
+  }
+}
